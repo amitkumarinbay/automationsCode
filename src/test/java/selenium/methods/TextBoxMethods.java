@@ -25,6 +25,7 @@ public class TextBoxMethods {
 			cr.addArguments("--remote-allow-origins=*");
 			driver = new ChromeDriver(cr);
 			driver.get(systemURL);
+			driver.manage().window().maximize();
 		} catch (TimeoutException e) {
 			// TODO: handle exception
 		}
